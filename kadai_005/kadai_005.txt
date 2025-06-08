@@ -1,0 +1,38 @@
+PS C:\Users\ryowe\ドキュメント\Samurai_terakoya> cd C:\Users\ryowe\ドキュメント\侍テラコヤ_ローカル
+PS C:\Users\ryowe\ドキュメント\侍テラコヤ_ローカル> mkdir git_challenge
+
+
+    ディレクトリ: C:\Users\ryowe\ドキュメント\侍テラコヤ_ローカル
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2025/06/08     20:12                git_challenge
+
+
+PS C:\Users\ryowe\ドキュメント\侍テラコヤ_ローカル> cd C:\Users\ryowe\ドキュメント\侍テラコヤ_ローカル\git_challenge
+PS C:\Users\ryowe\ドキュメント\侍テラコヤ_ローカル\git_challenge> git init
+Initialized empty Git repository in C:/Users/ryowe/ドキュメント/侍テラコヤ_ローカル/git_challenge/.git/
+PS C:\Users\ryowe\ドキュメント\侍テラコヤ_ローカル\git_challenge> echo "Hello, World!" > hello_world.txt
+PS C:\Users\ryowe\ドキュメント\侍テラコヤ_ローカル\git_challenge> git add hello_world.txt
+PS C:\Users\ryowe\ドキュメント\侍テラコヤ_ローカル\git_challenge> git commit -m "コミット１回目"                                    
+[main (root-commit) f4cc69c] コミット１回目
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+PS C:\Users\ryowe\ドキュメント\侍テラコヤ_ローカル\git_challenge> echo "こんにちは、世界！"　>> hello_world.txt
+PS C:\Users\ryowe\ドキュメント\侍テラコヤ_ローカル\git_challenge> git add hello_world.txt
+PS C:\Users\ryowe\ドキュメント\侍テラコヤ_ローカル\git_challenge> git commit -m "コミット２回目"
+[main dc8db95] コミット２回目
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\ryowe\ドキュメント\侍テラコヤ_ローカル\git_challenge> git log
+commit dc8db95ab79f8725cfe6d81a6714048a424239c6 (HEAD -> main)
+Author: Ryoma-py <samidare.sjk@gmail.com>
+Date:   Sun Jun 8 20:19:27 2025 +0900
+
+    コミット２回目
+
+commit f4cc69ca88baf58b206cf0b63233f68f5c4c7834
+Author: Ryoma-py <samidare.sjk@gmail.com>
+Date:   Sun Jun 8 20:17:49 2025 +0900
+
+    コミット１回目
